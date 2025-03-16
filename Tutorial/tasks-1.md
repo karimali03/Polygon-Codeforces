@@ -1,10 +1,6 @@
-### **Tasks: Write a Generator and Validator for Each**
+### **Tasks**
 
-For each of the following tasks, you need to write:
-
-1. **A generator** to create valid test cases.
-2. **A validator** to ensure the generated test cases meet the constraints.
-
+For each of the following tasks, you need to write the full problem on polygon:
 ---
 
 ### **Task 1: XOR of Two Integers**
@@ -68,6 +64,11 @@ Recreate the full problem statement, generator, validator, and checker based on:
 - Validate that the output follows the problem’s requirements.
 
 ---
+
+For each of the following tasks, you need to write:
+
+1. **A generator** to create valid test cases.
+2. **A validator** to ensure the generated test cases meet the constraints.
 
 ### **Task 3: Permutation of N**
 
