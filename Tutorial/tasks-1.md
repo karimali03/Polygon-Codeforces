@@ -1,31 +1,32 @@
-### **Tasks**
+# Polygon Problem Creation Tasks
 
-For each of the following tasks, you need to write the full problem on polygon:
+These tasks are designed to help you practice creating complete problems on **Polygon** — including the **statement**, **generator**, **validator**, and (if applicable) **checker**. Each task covers a different type of problem and concept.
+
 ---
 
-### **Task 1: XOR of Two Integers**
+## 🧩 **Task 1: XOR of Two Integers**
 
-#### **Problem Statement**
+### **Problem Statement**
 
-Given two integers `A` and `B`, print their XOR result.
+Given two integers `A` and `B`, print their bitwise XOR result.
 
-#### **Input Format**
+### **Input Format**
 
 Two integers `A` and `B` (`0 ≤ A, B ≤ 10^9`).
 
-#### **Output Format**
+### **Output Format**
 
 A single integer representing `A XOR B`.
 
-#### **Example**
+### **Example**
 
-##### **Input**
+**Input:**
 
 ```
 5 3
 ```
 
-##### **Output**
+**Output:**
 
 ```
 6
@@ -33,163 +34,156 @@ A single integer representing `A XOR B`.
 
 (Since `5 XOR 3 = 6`)
 
-#### **Generator Requirements:**
+### **Generator Requirements**
 
-- Randomly generate two integers `A` and `B` within the given range.
+* Randomly generate two integers `A` and `B` within `[0, 10^9]`.
 
-#### **Validator Requirements:**
+### **Validator Requirements**
 
-- Check that `A` and `B` are within the given range.
-- Ensure the input format is correct with exactly two integers.
+* Ensure there are exactly two integers in the input.
+* Check that `A` and `B` are within the specified range.
 
----
+### **Concepts Covered**
 
-### **Task 2: Problem 1904A (From Codeforces)**
-
-#### **Problem Statement**
-
-Recreate the full problem statement, generator, validator, and checker based on:  
-🔗 [Codeforces Problem 1904A](https://codeforces.com/contest/1904/problem/A)
-
-#### **Generator Requirements:**
-
-- Generate test cases that follow the problem constraints.
-
-#### **Validator Requirements:**
-
-- Check that the input meets all constraints.
-
-#### **Checker Requirements:**
-
-- Validate that the output follows the problem’s requirements.
+* Simple I/O format.
+* Basic integer constraints.
+* Writing minimal validators.
 
 ---
 
-For each of the following tasks, you need to write:
+## 🧮 **Task 2: Problem 1904A (from Codeforces)**
 
-1. **A generator** to create valid test cases.
-2. **A validator** to ensure the generated test cases meet the constraints.
+### **Objective**
 
-### **Task 3: Permutation of N**
+Recreate the full problem, including the **statement**, **generator**, **validator**, and **checker**, based on the official Codeforces problem:
+🔗 [Codeforces 1904A](https://codeforces.com/contest/1904/problem/A)
 
-#### **Problem Statement**
+### **Requirements**
 
-You are given an integer `N`. Generate a random permutation of numbers from `1` to `N`.
+* Reproduce the complete statement using LaTeX syntax in Polygon.
+* Implement a **generator** that produces random test cases following the same constraints.
+* Write a **validator** that checks all input conditions.
+* Implement a **checker** that verifies correctness (or reuse standard checkers if applicable).
+---
 
-#### **Input Format**
+## 🧮 **Task 3: Frequency Array of Strings**
+
+### **Objective**
+
+Given ( T ) test cases, each test case contains a string consisting of lowercase Latin letters. For each string, print its **frequency array** — an array of 26 integers, where the ( i^{th} ) number represents how many times the ( i^{th} ) letter of the English alphabet appears in the string.
+
+### Input Format
+
+* The first line contains a single integer ( T ) — the number of test cases.
+* Each of the next ( T ) lines contains a single string ( s ) (consisting of lowercase Latin letters).
+
+### Output Format
+
+For each test case, output a line of 26 space-separated integers representing the frequency of each letter from 'a' to 'z'.
+
+### Constraints
+
+* ` 1 ≤ T ≤ 10^4 `
+* ` 1 ≤ |s| ≤ 10^5 `
+* `The total length of all strings does not exceed ( 10^6 ).`
+
+**Input:**
+
+```
+2
+abc
+abbc
+```
+**Output:**
+
+```
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+```
+
+
+
+## 🔢 **Task 4: Permutation of N**
+
+### **Problem Statement**
+
+You are given an integer `N`. Print any valid permutation of numbers from `1` to `N`.
+
+### **Input Format**
 
 A single integer `N` (`1 ≤ N ≤ 10^5`).
 
-#### **Output Format**
+### **Output Format**
 
 A single line containing a permutation of integers from `1` to `N`.
 
-#### **Example**
+### **Example**
 
-##### **Input**
+**Input:**
 
 ```
 5
 ```
 
-##### **Output**
+**Output:**
 
 ```
 3 1 5 2 4
 ```
-
 (Any valid permutation is accepted)
 
-#### **Generator Requirements:**
+### **Generator Requirements**
 
-- Randomly generate an integer `N` within the given range.
-- Generate a valid permutation of numbers from `1` to `N`.
+* Randomly generate `N` within `[1, 10^5]`.
 
-#### **Validator Requirements:**
+### **Validator Requirements**
 
-- Check that the input consists of a single integer `N` within the allowed range.
-- Ensure the output is a valid permutation of numbers from `1` to `N`.
+* Check that `N` is within the range.
+* Ensure the output (if validated) is a valid permutation.
 
----
+### **Concepts Covered**
 
-### **Task 4: Random String of Lowercase Letters**
-
-#### **Problem Statement**
-
-You are given an integer `N`. Generate a random string of size `N` consisting of lowercase English letters.
-
-#### **Input Format**
-
-A single integer `N` (`1 ≤ N ≤ 10^6`).
-
-#### **Output Format**
-
-A single string of length `N` consisting of lowercase English letters (`a-z`).
-
-#### **Example**
-
-##### **Input**
-
-```
-8
-```
-
-##### **Output**
-
-```
-jksdfhwe
-```
-
-(Any valid random string of size `N` is accepted)
-
-#### **Generator Requirements:**
-
-- Randomly generate an integer `N` within the given range.
-- Generate a string of length `N` containing random lowercase letters.
-
-#### **Validator Requirements:**
-
-- Check that the input consists of a single integer `N` within the allowed range.
-- Ensure the output is a valid string of exactly `N` lowercase letters.
+* Permutation logic.
+* Randomized generation.
+* Range validation.
 
 ---
 
-### **Task 5: Valid Parentheses Sequence**
+## ⚙️ **Task 5: Valid Parentheses Sequence**
 
-#### **Problem Statement**
+### **Problem Statement**
 
-You are given an even integer `N`. Generate a valid parentheses sequence of length `N`.
+You are given an even integer `N`. Print any valid parentheses sequence of length `N`.
 
-#### **Input Format**
+### **Input Format**
 
-A single integer `N` (`2 ≤ N ≤ 10^6`, `N` is even).
+A single integer `N` (`2 ≤ N ≤ 10^6`, and `N` is even).
 
-#### **Output Format**
+### **Output Format**
 
-A single string of length `N` consisting only of `(` and `)`, forming a valid parentheses sequence.
+A string of length `N` consisting only of `(` and `)`, forming a valid parentheses sequence.
 
-#### **Example**
+### **Example**
 
-##### **Input**
+**Input:**
 
 ```
 6
 ```
 
-##### **Output**
+**Output:**
 
 ```
 (()())
 ```
 
-(Other valid sequences like `(())()` are also accepted)
+(Other valid outputs like `(())()` are also accepted)
 
-#### **Generator Requirements:**
+### **Generator Requirements**
 
-- Randomly generate an even integer `N` within the given range.
-- Generate a valid parentheses sequence of length `N`.
+* Randomly generate an even integer `N`.
 
-#### **Validator Requirements:**
+### **Validator Requirements**
 
-- Check that the input consists of a single even integer `N` within the allowed range.
-- Ensure the output is a valid parentheses sequence where every opening bracket has a matching closing bracket.
+* Ensure `N` is even and within the valid range.
+---
